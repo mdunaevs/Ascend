@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WXk-mb-vM8">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contact Button View Controller-->
+        <scene sceneID="Euh-Y0-Ha0">
+            <objects>
+                <viewController id="WXk-mb-vM8" customClass="ContactButtonViewController" customModule="Ascend" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KzB-A9-xFf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgw-kv-GFI">
+                                <rect key="frame" x="242" y="195" width="57" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mail_button2"/>
+                                <connections>
+                                    <action selector="contactButtonPressed:" destination="WXk-mb-vM8" eventType="touchUpInside" id="o00-TM-fP0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wf-6P-cbN">
+                                <rect key="frame" x="84" y="201" width="46" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="heart"/>
+                                <connections>
+                                    <action selector="heartButtonClicked:" destination="WXk-mb-vM8" eventType="touchUpInside" id="RC0-E3-6Gs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4Jl-0O-TS3"/>
+                    </view>
+                    <connections>
+                        <outlet property="heartButton" destination="7Wf-6P-cbN" id="Hg8-11-ZAa"/>
+                        <outlet property="mailButton" destination="hgw-kv-GFI" id="uGT-4D-X1P"/>
+                        <outlet property="mainView" destination="KzB-A9-xFf" id="bEe-2g-KGP"/>
+                        <outlet property="popUpView" destination="kYO-y4-bbT" id="Fci-iK-95a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4WT-iN-gsl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="kYO-y4-bbT">
+                    <rect key="frame" x="0.0" y="0.0" width="259" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="cs7-lI-Y26">
+                            <rect key="frame" x="15" y="94" width="229" height="14"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOs-rz-A9C">
+                                    <rect key="frame" x="0.0" y="0.0" width="45" height="14"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" image="facebook">
+                                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="facebookButtonPressed:" destination="WXk-mb-vM8" eventType="touchUpInside" id="UOi-Ta-oWq"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPx-vl-kfF">
+                                    <rect key="frame" x="93" y="0.0" width="44" height="14"/>
+                                    <state key="normal" image="messenger">
+                                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="messengerButtonPressed:" destination="WXk-mb-vM8" eventType="touchUpInside" id="Rfh-bb-7Dd"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTo-Rc-XvL">
+                                    <rect key="frame" x="185" y="0.0" width="44" height="14"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" image="gmail">
+                                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="gmailButtonPressed:" destination="WXk-mb-vM8" eventType="touchUpInside" id="l5D-BA-IPB"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact via:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPh-kR-WyE">
+                            <rect key="frame" x="15" y="20" width="87" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqV-Or-Mim">
+                            <rect key="frame" x="203" y="15" width="41" height="32"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="Close">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="closePopUpViewPressed:" destination="WXk-mb-vM8" eventType="touchUpInside" id="gkW-Fi-Sdf"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="cs7-lI-Y26" firstAttribute="leading" secondItem="P2A-6q-nQg" secondAttribute="leading" constant="15" id="42h-gp-m1P"/>
+                        <constraint firstItem="dqV-Or-Mim" firstAttribute="top" secondItem="kYO-y4-bbT" secondAttribute="top" constant="15" id="ES7-rP-xrn"/>
+                        <constraint firstAttribute="bottom" secondItem="cs7-lI-Y26" secondAttribute="bottom" constant="20" id="GPC-3J-RDF"/>
+                        <constraint firstItem="P2A-6q-nQg" firstAttribute="trailing" secondItem="cs7-lI-Y26" secondAttribute="trailing" constant="15" id="VJY-hF-Dcr"/>
+                        <constraint firstItem="cs7-lI-Y26" firstAttribute="top" secondItem="P2A-6q-nQg" secondAttribute="top" constant="50" id="ZMg-hD-cCN"/>
+                        <constraint firstItem="qPh-kR-WyE" firstAttribute="leading" secondItem="kYO-y4-bbT" secondAttribute="leading" constant="15" id="Zgj-t9-dA3"/>
+                        <constraint firstItem="P2A-6q-nQg" firstAttribute="trailing" secondItem="dqV-Or-Mim" secondAttribute="trailing" constant="15" id="kA7-Z1-bdZ"/>
+                        <constraint firstItem="qPh-kR-WyE" firstAttribute="top" secondItem="kYO-y4-bbT" secondAttribute="top" constant="20" id="zcC-kU-QgJ"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="P2A-6q-nQg"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="-52.232142857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="facebook" width="44" height="44"/>
+        <image name="gmail" width="44" height="44"/>
+        <image name="heart" width="56" height="56"/>
+        <image name="mail_button2" width="400" height="400"/>
+        <image name="messenger" width="44" height="44"/>
+    </resources>
+</document>

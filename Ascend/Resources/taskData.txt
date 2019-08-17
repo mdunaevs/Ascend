@@ -1,0 +1,13 @@
+Physics HW	9 : 00 AM	academic
+Physics lecture	11 : 00 AM	academic
+Math HW	10 : 00 AM	academic
+DFA Meeting	11 : 00 AM	social
+Dentist appointment	9 : 00 AM	health
+Robotics meeting	9 : 00 AM	social
+Math OH	9 : 00 AM	events
+Computer Science HW	9 : 00 AM	academic
+CS OH	9 : 00 AM	events
+Laundry	11 : 00 AM	other
+Calc HW	10 : 00 AM	academic
+Calc HW	10 : 00 AM	academic
+Microsoft interview	9 : 00 PM	events
